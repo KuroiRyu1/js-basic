@@ -35,4 +35,7 @@ console.log(a)
 let b='10'
 console.log(b)
 // cau c
+a=20
+console.log(a)
+
 
