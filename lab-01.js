@@ -26,4 +26,13 @@ console.log('*     *')
 console.log(' *   *')
 console.log('  * *')
 console.log('   *')
+// Bai 2
+
+// cau a
+let a=10
+console.log(a)
+// cau b
+let b='10'
+console.log(b)
+// cau c
 
