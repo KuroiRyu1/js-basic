@@ -41,5 +41,18 @@ console.log(a)
 const pi=3.14
 console.log(pi)
 // cau e
-
-
+//const pi=5
+//console.log(pi)
+// cau f
+let phone=new Object()
+phone.ten='Iphone 14'
+phone.Hangsanxuat='Apple'
+phone.Mausac='trang'
+phone.gia='1000USD'
+console.log(phone)
+// cau g
+phone.gia='750USD'
+console.log(phone)
+// cau h
+phone.ten='Iphone 14 promax'
+console.log(phone)
