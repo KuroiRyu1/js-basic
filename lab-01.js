@@ -37,5 +37,9 @@ console.log(b)
 // cau c
 a=20
 console.log(a)
+// cau d
+const pi=3.14
+console.log(pi)
+// cau e
 
 
