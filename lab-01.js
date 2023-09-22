@@ -56,3 +56,16 @@ console.log(phone)
 // cau h
 phone.ten='Iphone 14 promax'
 console.log(phone)
+//Bai 3
+
+// cau a
+a=9
+b=3
+console.log(a+b)
+console.log(a-b)
+console.log(a*b)
+console.log(a/b)
+// cau b
+console.log("trung binh cong")
+console.log(a/2+b/2)
+// cau c
