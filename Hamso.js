@@ -1,11 +1,12 @@
 //Bai 1
 
 // cau a
+
 console.log('Hello World')
 // cau b
 console.log('Vo Nguyen Minh Phat')
 // cau c
-console.clear()
+//console.clear()
 // cau d
 console.log('*****')
 console.log('*****')
@@ -91,16 +92,16 @@ console.log('bieu thuc so 6',bieuthuc6)
 //cau d
 let D=5
 let chuvi=D*pi
-console.log('Chu vi hinh tron 1:',chuvi)
+console.log('Chu vi 1:',chuvi)
 let dientich=pi*(D/2)*(D/2)
-console.log('Dien tich hinh tron 1:',dientich)
+console.log('Dien tich 1:',dientich)
 //cau e
 let dai=15
 let rong=10
 chuvi=(dai+rong)/2
-console.log('Chu vi hinh tron 2:',chuvi)
+console.log('Chu vi 2:',chuvi)
 dientich=(dai*rong)
-console.log('Dien tich hinh tron 2:',dientich)
+console.log('Dien tich 2:',dientich)
 //cau f
 let S=120
 let t=130/60
