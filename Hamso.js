@@ -59,10 +59,11 @@ console.log(dienthoai)
 dienthoai.ten='Iphone 14 promax'
 console.log(dienthoai)
 //Bai 3
+
 //cau a
 a=10
 b=5
-ketqua=a+b
+let ketqua=a+b
 console.log('tong:',ketqua)
 ketqua=a-b
 console.log('hieu:',ketqua)

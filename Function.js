@@ -25,42 +25,42 @@ function TinhThuong(a,b){
 TinhThuong(1,5)
 //cau b
 function TrungBinhCong(a,b){
-    Ketqua=(a+b)/2
-    return Ketqua,
-    console.log('Trung Binh Cong:',Ketqua)
+    let Trung_Binh_Cong=(a+b)/2
+    return Trung_Binh_Cong,
+    console.log('Trung Binh Cong:',Trung_Binh_Cong)
 }
 TrungBinhCong(10,20)
 //cau d
 const pi=3.14
 function ChuViHinhTron(D){
-    Ketqua=D*pi
-    return Ketqua,
-    console.log('Chu Vi Hinh Tron:',Ketqua)
+    Chu_Vi_Hinh_Tron=D*pi
+    return Chu_Vi_Hinh_Tron,
+    console.log('Chu Vi Hinh Tron:',Chu_Vi_Hinh_Tron)
 }
 ChuViHinhTron(5)
 function DienTichHinhTron(D){
-    Ketqua=pi*(D/2)*(D/2)
-    return Ketqua,
-    console.log('Dien Tich Hinh Tron:',Ketqua)
+   let Dien_Tich_Hinh_Tron=pi*(D/2)*(D/2)
+    return Dien_Tich_Hinh_Tron,
+    console.log('Dien Tich Hinh Tron:',Dien_Tich_Hinh_Tron)
 }
 DienTichHinhTron(5)
 //cau e
 function ChuViHCN(dai,rong){
-    Ketqua=(dai+rong)/2
-    return Ketqua,
-    console.log('Chu Vi Hinh Chu Nhat:',Ketqua)
+    let Chu_Vi_HCN=(dai+rong)/2
+    return Chu_Vi_HCN,
+    console.log('Chu Vi Hinh Chu Nhat:',Chu_Vi_HCN)
 }
 ChuViHCN(15,10)
 function DienTichHCN(dai,rong){
-    Ketqua=dai*rong
-    return Ketqua,
-    console.log('Dien Tich Hinh Chu Nhat',Ketqua)
+   let Dien_Tich_HCN=dai*rong
+    return Dien_Tich_HCN,
+    console.log('Dien Tich Hinh Chu Nhat',Dien_Tich_HCN)
 }
 DienTichHCN(15,10)
 //cau f
 function TinhVanToc(S,t){
-    Ketqua=S/t
-    return Ketqua,
-    console.log('Van toc:',Ketqua)
+    Van_Toc=S/t
+    return Van_Toc,
+    console.log('Van toc:',Van_Toc)
 }
 TinhVanToc(120,130/60)
