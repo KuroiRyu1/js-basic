@@ -23,25 +23,17 @@ function SoChanHayLe(a){
 SoChanHayLe(3)
 //cau c
 function Tim_So_Lon_Nhat(a,b,c){
-    let Max=0
-    if(Max<b){
-        Max=b
-}
-    else if(Max<c){
-        Max=c
-}
-else if(Max<a){
-    Max=a
-}
-    if(Max=a){
-        console.log('a la so lon nhat')
-}
-else if(max=c){
+    let Max=a
+   if(a>b&a>c){
+    console.log('a la so lon nhat')}
+   if(b>c&b>a){
+    console.log('b la so lon nhat')
+   }
+   if(c>b&c>a){
     console.log('c la so lon nhat')
+   }
 }
-else{console.log('b la so lon nhat')}
-}
-Tim_So_Lon_Nhat(9,5,6)
+Tim_So_Lon_Nhat(4,5,6)
 //cau d
 function Tinh_Nam_Nhuan(a){
     let bonus=a%4
@@ -54,15 +46,42 @@ function Tinh_Nam_Nhuan(a){
 Tinh_Nam_Nhuan(2023)
 //cau e
 function Kiem_Tra_Nguyen_Am_Hay_Phu_Am(b){
-    if(b='a' )
+    if(b='a'||'u'||'i'||'e'||'o'){
+        console.log('do la nguyen am')
+    }
+    else{console.log('do la phu am')}
 }
+Kiem_Tra_Nguyen_Am_Hay_Phu_Am('a')
 //Bai 2
 function Phuong_Trinh_Bac_Hai(x,a,b,c){
     if(a=b=0){
         console.log('Phuong Trinh Vo Nghiem')
     }
-    else if(a=0){
+    if(a=0){
         console.log('Phuong trinh co mot nghiem la',-c/b)
     }
+    if(b*b-4*a*c<0){
+        console.log('phuong trinh vo nghiem')
+    }
+    else{console.log('phuong trinh co 2 nghiem la',)}
 }
-
+// cau b
+function Tinh_Thue(thunhap){
+    let thue=10
+    function out(){
+        console.log('thue la',thue)
+    }
+    if(thunhap>20){
+        thue=20
+        out()
+    }
+    if(8<thunhap<15){
+        thue=15
+        out()
+    }
+    if(thunhap<8){
+        thue=0
+        out()
+    }
+}
+Tinh_Thue(10)
