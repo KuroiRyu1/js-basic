@@ -3,17 +3,17 @@
 arr=[3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
 let DoDaiMang=arr.length
 for(i=0;i<DoDaiMang;i=i+1){
-    console.log('Phan tu thu:',i,':',arr[i])
+    console.log('Phan tu thu %s = %s',i+1,arr[i])
 }
 //cau b
 let TongPhanTu=0
-for(let a=0;a<DoDaiMang;a=a+1){
-    TongPhanTu=TongPhanTu+arr[a]
+for(i=0;i<DoDaiMang;i=i+1){
+    TongPhanTu=TongPhanTu+arr[i]
 }
-console.log('Tong Cac Phan Tu Trong Mang La:',TongPhanTu)
+console.log('Cau b :Tong Cac Phan Tu Trong Mang La:%s',TongPhanTu)
 //cau c
 let Max=0
-let Min=1000
+let Min=arr[0]
 for(let n=0;n<DoDaiMang;n=n+1){
     if(arr[n]>Max){
         Max=arr[n]
@@ -22,26 +22,19 @@ for(let n=0;n<DoDaiMang;n=n+1){
         Min=arr[n]
     }
 }
-console.log('So Lon Nhat La:',Max,', So Nho Nhat La:',Min)
+console.log('So Lon Nhat La: %s Va So Nho Nhat La: %s',Max,Min)
 //cau d
-let TrungBinhCong=0
-for(let b=0,a=1;b<DoDaiMang&a<DoDaiMang;b=b+1,a=a+1){
-    TrungBinhCong=(arr[a]+arr[b])/2
-    console.log('Trung Binh Cong Phan Tu Thu',b,'va',a,'la',TrungBinhCong)
-}
+const TrungBinhCong=TongPhanTu/DoDaiMang
+console.log('Trung Binh Cong Cac Phan Tu Trong Mang La: %s',TrungBinhCong)
 //cau e
-let dau=0
-let cuoi=DoDaiMang-1
-let giua=0
-for(dau,cuoi,u=0;dau<cuoi&cuoi>0;dau=dau+1,cuoi=cuoi-1){
-    giua=arr[dau]
-    arr[dau]=arr[cuoi]
-    arr[cuoi]=giua
+let arr1=[]
+for(let i=DoDaiMang-1,n=0;i>=0&n<DoDaiMang;i--,n++){
+    arr1[n]=arr[i]
 }
-console.log(arr)
+console.log(arr1)
 //cau f
-let luu=0
-let n=0
-let solanxuathien=0
-for(luu;n<DoDaiMang;n=n+1){
+let giongnhau=0
+let ketqua=[]
+for(n=0;n<DoDaiMang;n++){
+    let 
 }
