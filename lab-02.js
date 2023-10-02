@@ -46,25 +46,31 @@ function Tinh_Nam_Nhuan(a){
 Tinh_Nam_Nhuan(2023)
 //cau e
 function Kiem_Tra_Nguyen_Am_Hay_Phu_Am(b){
-    if(b='a'||'u'||'i'||'e'||'o'){
+    if(b=='a'||b=='u'||b=='i'||b=='e'||b=='o'){
         console.log('do la nguyen am')
     }
     else{console.log('do la phu am')}
 }
 Kiem_Tra_Nguyen_Am_Hay_Phu_Am('a')
 //Bai 2
-function Phuong_Trinh_Bac_Hai(x,a,b,c){
-    if(a=b=0){
-        console.log('Phuong Trinh Vo Nghiem')
-    }
-    if(a=0){
-        console.log('Phuong trinh co mot nghiem la',-c/b)
-    }
-    if(b*b-4*a*c<0){
+function Phuong_Trinh_Bac_Hai(a,b,c){
+    let delta=b*b-4*a*c
+    if(delta<0){
         console.log('phuong trinh vo nghiem')
     }
-    else{console.log('phuong trinh co 2 nghiem la',)}
+    else if(delta==0){
+        const x1=(-b)/(2*a)
+        return x1,
+        console.log('phuong trinh co nghiem kep',x1)
+    }
+    else if(delta>0){
+        const x1=(-b+(Math.sqrt(delta)))/(2*a)
+        const x2=(-b-(Math.sqrt(delta)))/(2*a)
+        return x1,x2,
+        console.log('phuong trinh co 2 nghiem x1=',x1,"va x2=",x2)
+    }
 }
+Phuong_Trinh_Bac_Hai(4,2,7)
 // cau b
 function Tinh_Thue(thunhap){
     let thue=10
@@ -85,3 +91,37 @@ function Tinh_Thue(thunhap){
     }
 }
 Tinh_Thue(10)
+//cau c
+function Xep_Hang(diemkiemtra,diemthigiuaki,diemthicuoiki){
+    let diemtrungbinh=(diemkiemtra+diemthigiuaki*2+diemthicuoiki*3)/6
+    if(diemtrungbinh>=9){
+        console.log('Hang A')
+    }
+    else if(diemtrungbinh>=7&diemtrungbinh<9){
+        console.log('Hang B')
+    }
+    else if(diemtrungbinh>=5&diemtrungbinh<7){
+        console.log('Hang C')
+    }
+    else if(diemtrungbinh<5){
+        console.log('Hang F')
+    }
+}
+Xep_Hang(2,4,8)
+//cau d
+function Tinh_Gia_Cuoc_DT(thoigian){
+    let thuebao=25000
+    if(thoigian<50){
+        let chiphi=thuebao+thoigian*600
+        console.log('Gia Thue Bao:',chiphi)
+    }
+    else if(thoigian>50&thoigian<=200){
+        let chiphi=thuebao+50*600+(thoigian-50)*400
+        console.log('Gia Thue Bao:',chiphi)
+    }
+    else if(thoigian>200){
+        let chiphi=thuebao+50*600+150*400+(thoigian-200)*200
+        console.log('Gia Thue Bao:',chiphi)
+    }
+}
+Tinh_Gia_Cuoc_DT(70)
