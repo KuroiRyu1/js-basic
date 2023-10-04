@@ -69,7 +69,7 @@ for(i=0;i<DoDaiMangMoi;i++){
   }
 }
 console.log(arr1)
-//cau k
+//cau j
 for(i=0;i<DoDaiMangMoi;i++){
     for(j=i+1;j<DoDaiMangMoi;j++){
         if(arr1[i]<arr1[j]){
@@ -80,3 +80,7 @@ for(i=0;i<DoDaiMangMoi;i++){
   }
 }
 console.log(arr1)
+//cau k
+for(i=0;i<DoDaiMangMoi;i++){
+    
+}
