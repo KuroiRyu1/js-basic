@@ -33,8 +33,50 @@ for(let i=DoDaiMang-1,n=0;i>=0&n<DoDaiMang;i--,n++){
 }
 console.log(arr1)
 //cau f
-let giongnhau=0
-let ketqua=[]
-for(n=0;n<DoDaiMang;n++){
-    let 
+const TanXuatXuatHien={}
+for(i=0;i<DoDaiMang;i++){
+    const PhanTuThuI=arr1[i];
+    TanXuatXuatHien[PhanTuThuI]=(TanXuatXuatHien[PhanTuThuI]||0)+1;
 }
+console.log('=>>>',TanXuatXuatHien)
+//cau g
+for(i=DoDaiMang-1;i>=0;i--){
+    arr1[i+1]=arr1[i]
+}
+arr1[0]=177
+console.log(arr1)
+//cau h
+DoDaiMangMoi=arr1.length
+let CheckTangDan=true
+for(i=1;i<DoDaiMangMoi;i++){
+    if(arr1[i+1]<arr1[i]){
+        CheckTangDan=false
+        break
+    }
+}
+if(CheckTangDan===true){
+    console.log('Day La Day So Tang Dan')
+}
+else{console.log('Day Khong Phai La Day So Tang Dan')}
+//cau i
+for(i=0;i<DoDaiMangMoi;i++){
+    for(j=i+1;j<DoDaiMangMoi;j++){
+        if(arr1[i]>arr1[j]){
+        let tam=arr1[i];
+        arr1[i]=arr1[j];
+        arr1[j]=tam
+    }
+  }
+}
+console.log(arr1)
+//cau k
+for(i=0;i<DoDaiMangMoi;i++){
+    for(j=i+1;j<DoDaiMangMoi;j++){
+        if(arr1[i]<arr1[j]){
+        let tam=arr1[i];
+        arr1[i]=arr1[j];
+        arr1[j]=tam
+    }
+  }
+}
+console.log(arr1)
