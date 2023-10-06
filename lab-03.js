@@ -80,7 +80,36 @@ for(i=0;i<DoDaiMangMoi;i++){
   }
 }
 console.log(arr1)
+
 //cau k
+let SoChan=[]
+let a=-1
 for(i=0;i<DoDaiMangMoi;i++){
-    
+ if((arr1[i]%2)==0){
+    a++
+   SoChan[a]=arr1[i]
+ }
 }
+console.log('Cac so chan trong mang la:',SoChan)
+//cau l
+let SoLe=[]
+a=-1
+for(i=0;i<DoDaiMangMoi;i++){
+ if((arr1[i]%2)!=0){
+    a++
+   SoLe[a]=arr1[i]
+ }
+}
+console.log('Cac so le trong mang la:',SoLe)
+//Bai 2
+arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
+let Tong={}
+a=0
+let DoDaiMangHai=arr2.length
+for(i=0;i<=DoDaiMangHai;i++){
+    Tong=arr2[i]+arr2[i+1]
+    if(Tong==10){
+        console.log('So %s Va So %s Co Tong =10',arr2[i],arr2[i+1])
+    }
+}
+console.log(DoDaiMangHai)

@@ -33,3 +33,8 @@ for(i=0;i<DoDaiMang;i++){
 }
 
 console.log('=>>>>',TanXuatXuatHien)
+i=0
+let j=i+1
+console.log(i,j)
+i=10
+console.log(j)
