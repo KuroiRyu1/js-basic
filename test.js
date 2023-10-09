@@ -18,7 +18,6 @@ for(dau,cuoi,u=0;dau<cuoi&cuoi>0;dau++,cuoi--){
 }
 console.log(arr)
 //test f
-let arr2=[]
 let tanxuat=0
 for(i=0;i<DoDaiMang;i++){
     let i
@@ -38,3 +37,15 @@ let j=i+1
 console.log(i,j)
 i=10
 console.log(j)
+//
+let arr2=[5, -2, 5, -6, 23, 69, 100, -13, 10, 0,14]
+i=0
+let Max1=100
+let Max2=0
+while(arr2[n]!==undefined){
+    if(arr2[n]<Max1&arr2[n]>Max2){
+        Max2=arr2[n]
+    }
+    n++
+}
+console.log(Max2)

@@ -117,7 +117,7 @@ while(arr[i]!==undefined){
     i++
 }
 console.log('So Chan Gom: %s',SoChan)
-//cau k
+//cau l
 let SoLe=[]
 i=0
 n=-1
@@ -131,3 +131,80 @@ while(arr[i]!==undefined){
 console.log('So Le Gom: %s',SoLe)
 //Bai 2
 //cau a
+i=0
+n=0
+let arr2=[5, -2, 5, -6, 23, 69, 100, -13, 10, 0,14]
+while(arr2[i]!==undefined){
+    while(arr2[n]!==undefined){
+        if((arr2[i]+arr2[n])==10){
+            console.log('Hai So %s Va So %s Co Tong La 10',arr2[i],arr2[n])
+        }
+        n++
+    }
+    i++
+    n=i+1
+}
+//cau b
+i=0
+n=1
+while(arr2[i]!==undefined){
+    while(arr2[n]!==undefined){
+        if(arr2[i]==arr2[n]){
+            o=n
+            p=o+1
+            while(arr2[o]!==undefined){
+                arr2[o]=arr2[p]
+                p++
+                o++
+            }
+        }
+        n++
+    }
+    i++
+}
+console.log('%s',arr2)
+//cau d
+let Max1=0
+let Max3=0
+let Max2=0
+i=0,n=0,o=0
+while(arr2[i]!==undefined){
+    if(arr2[i]>Max1){
+        Max1=arr2[i]
+    }
+    i++
+}
+while(arr2[n]!==undefined){
+    if(arr2[n]<Max1&arr2[n]>Max2){
+        Max2=arr2[n]
+    }
+    n++
+}
+while(arr2[o]!==undefined){
+    if(arr2[o]<Max2&arr2[o]>Max3){
+        Max3=arr2[o]
+    }
+    o++
+}
+let TongMax=Max1+Max2+Max3
+console.log('Tong 3 So Lon Nhat Trong Mang La %s',TongMax)
+//cau e
+let TrungBinhMax=(Max1+Max2+Max3)/3
+console.log('Trung Binh Cong Ba So Lon Nhat Trong Mang la %s',TrungBinhMax)
+//cau f
+i=0,Max=0
+o=0,Min=arr2[0]
+while(arr2[i]!==undefined){
+    if(arr2[i]>Max){
+        Max=arr2[i]
+    }
+    i++
+}
+while(arr2[o]!==undefined){
+    if(arr2[o]<Min){
+        Min=arr2[o]
+    }
+    o++
+}
+let DoChenhLech=Max-Min
+console.log('Do Lech Lon Nhat La %s ',DoChenhLech)
