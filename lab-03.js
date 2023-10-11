@@ -31,20 +31,20 @@ let arr1=[]
 for(let i=DoDaiMang-1,n=0;i>=0&n<DoDaiMang;i--,n++){
     arr1[n]=arr[i]
 }
-console.log(arr1)
+console.log('Doi CHieu Mang %s',arr1)
 //cau f
 const TanXuatXuatHien={}
 for(i=0;i<DoDaiMang;i++){
-    const PhanTuThuI=arr1[i];
+    const PhanTuThuI=arr[i];
     TanXuatXuatHien[PhanTuThuI]=(TanXuatXuatHien[PhanTuThuI]||0)+1;
 }
-console.log('=>>>',TanXuatXuatHien)
+console.log('=>>> %s',TanXuatXuatHien)
 //cau g
 for(i=DoDaiMang-1;i>=0;i--){
-    arr1[i+1]=arr1[i]
+    arr[i+1]=arr[i]
 }
-arr1[0]=177
-console.log(arr1)
+arr[0]=177
+console.log('Them 177 vao Mang: %s',arr)
 //cau h
 DoDaiMangMoi=arr1.length
 let CheckTangDan=true
@@ -68,7 +68,7 @@ for(i=0;i<DoDaiMangMoi;i++){
     }
   }
 }
-console.log(arr1)
+console.log('Sap Xep Theo Thu Tu Tang Dan %s',arr1)
 //cau j
 for(i=0;i<DoDaiMangMoi;i++){
     for(j=i+1;j<DoDaiMangMoi;j++){
@@ -79,8 +79,7 @@ for(i=0;i<DoDaiMangMoi;i++){
     }
   }
 }
-console.log(arr1)
-
+console.log('Sap Xep Theo Thu Tu Giam Dan %s',arr1)
 //cau k
 let SoChan=[]
 let a=-1
@@ -90,7 +89,7 @@ for(i=0;i<DoDaiMangMoi;i++){
    SoChan[a]=arr1[i]
  }
 }
-console.log('Cac so chan trong mang la:',SoChan)
+console.log('Cac so chan trong mang la: %s',SoChan)
 //cau l
 let SoLe=[]
 a=-1
@@ -100,7 +99,7 @@ for(i=0;i<DoDaiMangMoi;i++){
    SoLe[a]=arr1[i]
  }
 }
-console.log('Cac so le trong mang la:',SoLe)
+console.log('Cac so le trong mang la: %s',SoLe)
 //Bai 2
 arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
 let DoDaiMangHai=arr2.length
@@ -124,7 +123,7 @@ for(i=0;i<=DoDaiMangHai;i++){
         }
     }
 }
-console.log(arr2)
+console.log('%s',arr2)
 //cau d
 let Max1=0
 let Max2=0
@@ -144,7 +143,6 @@ for(o=0;o<DoDaiMangHai;o++){
         Max3=arr2[o]
     }
 }
-console.log(Max1,Max2,Max3)
 let TongMax=Max1+Max2+Max3
 console.log('Tong Ba So Lon Nhat La : %s',TongMax)
 //cau e

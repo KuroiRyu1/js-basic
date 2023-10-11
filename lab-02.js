@@ -39,9 +39,9 @@ function Tinh_Nam_Nhuan(a){
     let bonus=a%4
     let add=a%100
     if(bonus=0 & add!=0){
-        console.log('nam',a,'la nam nhuan')
+        console.log('Nam %s La Nam Nhuan',a)
     }
-    else{console.log('nam',a,'khong phai la nam nhuan')}
+    else{console.log('Nam %s Khong Phai La Nam Nhuan',a)}
 }
 Tinh_Nam_Nhuan(2023)
 //cau e
@@ -61,13 +61,13 @@ function Phuong_Trinh_Bac_Hai(a,b,c){
     else if(delta==0){
         const x1=(-b)/(2*a)
         return x1,
-        console.log('phuong trinh co nghiem kep',x1)
+        console.log('Phuong Trinh Co Nghiem Kep %s',x1)
     }
     else if(delta>0){
         const x1=(-b+(Math.sqrt(delta)))/(2*a)
         const x2=(-b-(Math.sqrt(delta)))/(2*a)
         return x1,x2,
-        console.log('phuong trinh co 2 nghiem x1=',x1,"va x2=",x2)
+        console.log('Phuong Trinh Co 2 Nghiem x1= %s Va x2= %s',x1,x2)
     }
 }
 Phuong_Trinh_Bac_Hai(4,2,7)
@@ -75,7 +75,7 @@ Phuong_Trinh_Bac_Hai(4,2,7)
 function Tinh_Thue(thunhap){
     let thue=10
     function out(){
-        console.log('thue la',thue)
+        console.log('Thue La : %s',thue)
     }
     if(thunhap>20){
         thue=20
@@ -113,15 +113,15 @@ function Tinh_Gia_Cuoc_DT(thoigian){
     let thuebao=25000
     if(thoigian<50){
         let chiphi=thuebao+thoigian*600
-        console.log('Gia Thue Bao:',chiphi)
+        console.log('Gia Thue Bao: %s',chiphi)
     }
     else if(thoigian>50&thoigian<=200){
         let chiphi=thuebao+50*600+(thoigian-50)*400
-        console.log('Gia Thue Bao:',chiphi)
+        console.log('Gia Thue Bao: %s',chiphi)
     }
     else if(thoigian>200){
         let chiphi=thuebao+50*600+150*400+(thoigian-200)*200
-        console.log('Gia Thue Bao:',chiphi)
+        console.log('Gia Thue Bao: %s',chiphi)
     }
 }
 Tinh_Gia_Cuoc_DT(70)
