@@ -189,7 +189,7 @@ while(arr2[o]!==undefined){
 let TongMax=Max1+Max2+Max3
 console.log('Tong 3 So Lon Nhat Trong Mang La %s',TongMax)
 //cau e
-let TrungBinhMax=(Max1+Max2+Max3)/3
+let TrungBinhMax=TongMax/3
 console.log('Trung Binh Cong Ba So Lon Nhat Trong Mang la %s',TrungBinhMax)
 //cau f
 i=0,Max=0

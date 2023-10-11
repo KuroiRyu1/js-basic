@@ -49,3 +49,7 @@ while(arr2[n]!==undefined){
     n++
 }
 console.log(Max2)
+for(o=1,p=o+1;o<=arr2.length;o++,p++){
+    arr2[o]=arr2[p]
+}
+console.log(arr2)

@@ -103,13 +103,65 @@ for(i=0;i<DoDaiMangMoi;i++){
 console.log('Cac so le trong mang la:',SoLe)
 //Bai 2
 arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
-let Tong={}
-a=0
 let DoDaiMangHai=arr2.length
+//cau a
 for(i=0;i<=DoDaiMangHai;i++){
-    Tong=arr2[i]+arr2[i+1]
-    if(Tong==10){
-        console.log('So %s Va So %s Co Tong =10',arr2[i],arr2[i+1])
+    for(n=i+1;n<=DoDaiMangHai;n++){
+        if((arr2[i]+arr2[n])==10){
+            console.log('So %s Va So %s Co Tong =10',arr2[i],arr2[n])
+        }
     }
 }
-console.log(DoDaiMangHai)
+//cau b
+i=0
+n=1
+for(i=0;i<=DoDaiMangHai;i++){
+    for(n=i+1;n<=DoDaiMangHai;n++){
+        if(arr2[i]==arr2[n]){
+            for(o=n,p=n+1;o<DoDaiMangHai;o++,p++){
+                arr2[o]=arr2[p]
+            }
+        }
+    }
+}
+console.log(arr2)
+//cau d
+let Max1=0
+let Max2=0
+let Max3=0
+for(i=0;i<DoDaiMangHai;i++){
+    if(arr2[i]>Max1){
+        Max1=arr2[i]
+    }    
+}
+for(n=0;n<DoDaiMang;n++){
+    if(arr2[n]>Max2&arr2[n]<Max1){
+        Max2=arr2[n]
+    }
+}
+for(o=0;o<DoDaiMangHai;o++){
+    if(arr2[o]>Max3&arr2[o]<Max2){
+        Max3=arr2[o]
+    }
+}
+console.log(Max1,Max2,Max3)
+let TongMax=Max1+Max2+Max3
+console.log('Tong Ba So Lon Nhat La : %s',TongMax)
+//cau e
+let TrungBinhCongMax=TongMax/3
+console.log('Trung Binh Cong Ba So Lon Nhat La : %s',TrungBinhCongMax)
+//cau f
+Max=0
+Min=0
+for(i=0;i<DoDaiMangHai;i++){
+    if(arr2[i]>Max){
+        Max=arr2[i]
+    }
+}
+for(n=0;n<DoDaiMangHai;n++){
+    if(arr2[n]<Min){
+        Min=arr2[n]
+    }
+}
+let DoChenhLechMax=Max-Min
+console.log('Do Chenh Lech Lon Nhat Giua Cac Phan Tu La %s',DoChenhLechMax)
