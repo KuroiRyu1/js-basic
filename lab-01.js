@@ -64,68 +64,68 @@ console.log(dienthoai)
 a=10
 b=5
 let ketqua=a+b
-console.log('tong:',ketqua)
+console.log('tong: %s',ketqua)
 ketqua=a-b
-console.log('hieu:',ketqua)
+console.log('hieu: %s',ketqua)
 ketqua=a*b
-console.log('tich:',ketqua)
+console.log('tich: %s',ketqua)
 ketqua=a/b
-console.log('thuong:',ketqua)
+console.log('thuong: %s',ketqua)
 //cau b
 trungbinhcong=(a+b)/2
-console.log('trung binh cong=',trungbinhcong)
+console.log('trung binh cong= %s',trungbinhcong)
 //cau c
 let x=3
 let y=4
 let z=6
 let bieuthuc1=x*x+2*x+1
-console.log('bieu thuc so 1:',bieuthuc1)
+console.log('bieu thuc so 1: %s',bieuthuc1)
 let bieuthuc2=x*x*x-3*x*y-5*y+3*y*y
-console.log('bieu thuc so 2:',bieuthuc2)
+console.log('bieu thuc so 2: %s',bieuthuc2)
 let bieuthuc3=(x*y)*(x*y)-2*x*x*y+13*y
-console.log('bieu thuc so 3:',bieuthuc3)
+console.log('bieu thuc so 3: %s',bieuthuc3)
 let bieuthuc4=4*x*x*x+3*x*y+y*y-(2*x*x-3*y)
-console.log('bieu thuc so 4:',bieuthuc4)
+console.log('bieu thuc so 4: %s',bieuthuc4)
 let bieuthuc5=(5*x*x/(4*x*y))+y*y
-console.log('bieu thuc so 5:',bieuthuc5)
+console.log('bieu thuc so 5: %s',bieuthuc5)
 let bieuthuc6=x*x-2*x*y*z/(y*y)+5*x-2*y*y+4*x*z*z*z+z*z*z
-console.log('bieu thuc so 6',bieuthuc6)
+console.log('bieu thuc so 6: %s',bieuthuc6)
 //cau d
 let D=5
 let chuvi=D*pi
-console.log('Chu vi 1:',chuvi)
+console.log('Chu vi 1: %s',chuvi)
 let dientich=pi*(D/2)*(D/2)
-console.log('Dien tich 1:',dientich)
+console.log('Dien tich 1: %s',dientich)
 //cau e
 let dai=15
 let rong=10
 chuvi=(dai+rong)/2
-console.log('Chu vi 2:',chuvi)
+console.log('Chu vi 2: %s',chuvi)
 dientich=(dai*rong)
-console.log('Dien tich 2:',dientich)
+console.log('Dien tich 2: %s',dientich)
 //cau f
 let S=120
 let t=130/60
 let v=S/t
-console.log('Van toc cua xe:',v)
+console.log('Van toc cua xe: %s',v)
 //cau g
 t=150/60
 v=60
 S=v*t
-console.log('Quang duong xe di duoc:',S)
+console.log('Quang duong xe di duoc: %s',S)
 //cau h
 v=15.2
 t=3
 S=v*t
-console.log('Quang duong cano di duoc trong 3 gio',S)
+console.log('Quang duong cano di duoc trong 3 gio %s',S)
 //cau i
 t=11-8+20/60
 v=42
 let SAB=v*t
-console.log('Do dai quang duong AB',SAB)
+console.log('Do dai quang duong AB %s',SAB)
 //cau j
 chieudai=8
 chieurong=6
 let chieucao=5
 let thetich=(chieudai*chieurong*chieucao)*4
-console.log('The tich khoi go:',thetich)
+console.log('The tich khoi go: %s',thetich)

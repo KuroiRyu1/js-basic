@@ -24,16 +24,14 @@ SoChanHayLe(3)
 //cau c
 function Tim_So_Lon_Nhat(a,b,c){
     let Max=a
-   if(a>b&a>c){
-    console.log('a la so lon nhat')}
-   if(b>c&b>a){
-    console.log('b la so lon nhat')
-   }
-   if(c>b&c>a){
-    console.log('c la so lon nhat')
-   }
+    if(a>Max){Max=a}
+    else if(b>Max){Max=b}
+    else if(c>Max){Max=c}
+    if(Max==a){console.log(`So a La So Lon Nhat`)}
+    else if(Max==b){console.log('So b La So Lon Nhat')}
+    else if(Max==c){console.log('So c La So Lon Nhat')}
 }
-Tim_So_Lon_Nhat(4,5,6)
+Tim_So_Lon_Nhat(4,1,2)
 //cau d
 function Tinh_Nam_Nhuan(a){
     let bonus=a%4
@@ -51,7 +49,7 @@ function Kiem_Tra_Nguyen_Am_Hay_Phu_Am(b){
     }
     else{console.log('do la phu am')}
 }
-Kiem_Tra_Nguyen_Am_Hay_Phu_Am('a')
+Kiem_Tra_Nguyen_Am_Hay_Phu_Am('g')
 //Bai 2
 function Phuong_Trinh_Bac_Hai(a,b,c){
     let delta=b*b-4*a*c

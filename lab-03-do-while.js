@@ -159,11 +159,13 @@ do{
 //cau b
 i=0
 n=1
+let del=0
 do{
     do{
         if(arr2[i]==arr2[n]){
             let o=n
             let p=o+1
+            del=del+1
             do{
                 arr2[o]=arr2[p]
                 p++
@@ -175,6 +177,7 @@ do{
     }while(arr2[n]!==undefined)
     i++
 }while(arr2[i]!==undefined)
+arr2.length=arr2.length-del
 console.log('%s',arr2)
 //cau d
 let Max1=0

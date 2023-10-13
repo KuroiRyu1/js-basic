@@ -114,15 +114,18 @@ for(i=0;i<=DoDaiMangHai;i++){
 //cau b
 i=0
 n=1
+let del=-1
 for(i=0;i<=DoDaiMangHai;i++){
     for(n=i+1;n<=DoDaiMangHai;n++){
         if(arr2[i]==arr2[n]){
             for(o=n,p=n+1;o<DoDaiMangHai;o++,p++){
                 arr2[o]=arr2[p]
             }
+            del=del+1
         }
     }
 }
+arr2.length=arr2.length-del
 console.log('%s',arr2)
 //cau d
 let Max1=0

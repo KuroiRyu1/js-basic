@@ -147,11 +147,13 @@ while(arr2[i]!==undefined){
 //cau b
 i=0
 n=1
+let del=0
 while(arr2[i]!==undefined){
     while(arr2[n]!==undefined){
         if(arr2[i]==arr2[n]){
             o=n
             p=o+1
+            del=del+1
             while(arr2[o]!==undefined){
                 arr2[o]=arr2[p]
                 p++
@@ -162,6 +164,7 @@ while(arr2[i]!==undefined){
     }
     i++
 }
+arr2.length=arr2.length-del
 console.log('%s',arr2)
 //cau d
 let Max1=0
