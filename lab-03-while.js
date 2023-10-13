@@ -167,47 +167,24 @@ while(arr2[i]!==undefined){
 arr2.length=arr2.length-del
 console.log('%s',arr2)
 //cau d
-let Max1=0
-let Max3=0
-let Max2=0
-i=0,n=0,o=0
+i=0
 while(arr2[i]!==undefined){
-    if(arr2[i]>Max1){
-        Max1=arr2[i]
+   let j=i+1
+    while(arr2[j]!==undefined){
+        if(arr2[i]<arr2[j]){
+            let tam=arr2[i]
+            arr2[i]=arr2[j]
+            arr2[j]=tam
+        }
+    j++
     }
     i++
 }
-while(arr2[n]!==undefined){
-    if(arr2[n]<Max1&arr2[n]>Max2){
-        Max2=arr2[n]
-    }
-    n++
-}
-while(arr2[o]!==undefined){
-    if(arr2[o]<Max2&arr2[o]>Max3){
-        Max3=arr2[o]
-    }
-    o++
-}
-let TongMax=Max1+Max2+Max3
+let TongMax=arr2[0]+arr2[1]+arr2[2]
 console.log('Tong 3 So Lon Nhat Trong Mang La %s',TongMax)
 //cau e
 let TrungBinhMax=TongMax/3
 console.log('Trung Binh Cong Ba So Lon Nhat Trong Mang la %s',TrungBinhMax)
 //cau f
-i=0,Max=0
-o=0,Min=arr2[0]
-while(arr2[i]!==undefined){
-    if(arr2[i]>Max){
-        Max=arr2[i]
-    }
-    i++
-}
-while(arr2[o]!==undefined){
-    if(arr2[o]<Min){
-        Min=arr2[o]
-    }
-    o++
-}
-let DoChenhLech=Max-Min
+let DoChenhLech=arr2[0]-arr2[arr2.length-1]
 console.log('Do Lech Lon Nhat La %s ',DoChenhLech)

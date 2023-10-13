@@ -125,44 +125,37 @@ for(i=0;i<=DoDaiMangHai;i++){
         }
     }
 }
+//cau b ver ez
+i=0
+n=1
+let arr3=[]
+so=0
+for(i=0;i<=DoDaiMangHai;i++){
+    for(n=i+1;n<=DoDaiMangHai;n++){
+        if(arr2[i]==arr2[n]){
+            arr2[n]=undefined
+        }
+    }
+    if(arr2[i]!==undefined){arr3[so]=arr2[i]
+    so++}
+}
 arr2.length=arr2.length-del
-console.log('%s',arr2)
+console.log('%s',arr3)
 //cau d
-let Max1=0
-let Max2=0
-let Max3=0
 for(i=0;i<DoDaiMangHai;i++){
-    if(arr2[i]>Max1){
-        Max1=arr2[i]
-    }    
-}
-for(n=0;n<DoDaiMang;n++){
-    if(arr2[n]>Max2&arr2[n]<Max1){
-        Max2=arr2[n]
+    for(j=i+1;j<DoDaiMangHai;j++){
+        if(arr3[i]<arr3[j]){
+        let tam=arr3[i];
+        arr3[i]=arr3[j];
+        arr3[j]=tam
     }
+  }
 }
-for(o=0;o<DoDaiMangHai;o++){
-    if(arr2[o]>Max3&arr2[o]<Max2){
-        Max3=arr2[o]
-    }
-}
-let TongMax=Max1+Max2+Max3
+let TongMax=arr3[0]+arr3[1]+arr3[2]
 console.log('Tong Ba So Lon Nhat La : %s',TongMax)
 //cau e
 let TrungBinhCongMax=TongMax/3
 console.log('Trung Binh Cong Ba So Lon Nhat La : %s',TrungBinhCongMax)
 //cau f
-Max=0
-Min=0
-for(i=0;i<DoDaiMangHai;i++){
-    if(arr2[i]>Max){
-        Max=arr2[i]
-    }
-}
-for(n=0;n<DoDaiMangHai;n++){
-    if(arr2[n]<Min){
-        Min=arr2[n]
-    }
-}
-let DoChenhLechMax=Max-Min
+let DoChenhLechMax=arr3[0]-arr3[arr3.length-1]
 console.log('Do Chenh Lech Lon Nhat Giua Cac Phan Tu La %s',DoChenhLechMax)
